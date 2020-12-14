@@ -1,0 +1,9 @@
+Flask==1.1.2
+flask_wtf
+flask-sqlalchemy
+flask-migrate
+# flask-login
+# flask_table
+# uwsgi
+# flask_script
+# flask_migrate
