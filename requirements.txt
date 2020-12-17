@@ -1,9 +1,12 @@
 Flask==1.1.2
 flask_wtf
+wtforms[email]
 flask-sqlalchemy
 flask-migrate
-# flask-login
+flask-login
+
 # flask_table
 # uwsgi
 # flask_script
-# flask_migrate
+
+# pip install wtforms[email]
