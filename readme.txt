@@ -17,7 +17,7 @@ location / { try_files $uri @app; }
 flask db upgrade
 
 start debug server
-export FLASK_APP=
+export FLASK_APP=microblog.py
 export FLASK_ENV=development
 export FLASK_DEBUG=1
 flask run
