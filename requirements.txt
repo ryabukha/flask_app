@@ -4,9 +4,7 @@ wtforms[email]
 flask-sqlalchemy
 flask-migrate
 flask-login
+flask-mail
+pyjwt
 
-# flask_table
-# uwsgi
-# flask_script
-
-# pip install wtforms[email]
+# pip install -r requirements.txt
