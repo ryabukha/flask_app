@@ -6,5 +6,6 @@ flask-migrate
 flask-login
 flask-mail
 pyjwt
+flask-bootstrap
 
 # pip install -r requirements.txt
