@@ -13,3 +13,4 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['p-xa@ukr.net']
     POSTS_PER_PAGE = 5
+    LANGUAGES = ['en', 'ru']
