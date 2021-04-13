@@ -3,3 +3,6 @@ __pycache__/
 logs/
 app.db
 env.sh
+
+# Translations
+*.mo
