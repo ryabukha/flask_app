@@ -9,5 +9,7 @@ pyjwt
 flask-bootstrap
 flask-moment
 flask-babel
+requests
+guess-language_spirit
 
 # pip install -r requirements.txt

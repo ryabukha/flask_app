@@ -23,3 +23,10 @@ export FLASK_DEBUG=1
 flask run
 ## or
 uwsgi uwsgi.ini
+
+add new language:
+flask translate init <language-code>
+update after add market _l _():
+flask translate update
+compile after translate messages.mo:
+flask translate compile
