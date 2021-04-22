@@ -12,5 +12,6 @@ flask-babel
 requests
 guess-language_spirit
 python-dotenv
+elasticsearch
 
 # pip install -r requirements.txt
