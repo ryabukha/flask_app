@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-20 17:49+0300\n"
+"POT-Creation-Date: 2021-04-28 12:21+0300\n"
 "PO-Revision-Date: 2021-04-13 15:21+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,24 +19,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: app/__init__.py:18
+#: app/__init__.py:19
 #, fuzzy
 msgid "Please log in to access this page."
 msgstr "Для доступа к странице войдите в аккаунт"
 
 #: app/translate.py:10
 msgid "Error: the translation service is not configured."
-msgstr ""
+msgstr "Ошибка: сервис перевода не сконфигурирован."
 
 #: app/translate.py:20
 msgid "Error: the translation service failed."
-msgstr ""
+msgstr "Ошибка: сервис не смог сделать перевод."
 
 #: app/auth/email.py:8
 msgid "[Microblog] Reset Your Password"
 msgstr "[Microblog] Сбросить пароль"
 
-#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:19
 msgid "Username"
 msgstr "Имя пользователя"
 
@@ -65,7 +65,7 @@ msgstr "Повторить Пароль"
 msgid "Register"
 msgstr "Регистрация"
 
-#: app/auth/forms.py:27 app/main/forms.py:23
+#: app/auth/forms.py:27 app/main/forms.py:32
 msgid "Please use a different username."
 msgstr "Пожалуйста, введите другое имя пользователя"
 
@@ -100,60 +100,65 @@ msgstr "Сброс пароля"
 msgid "Your password has been reset."
 msgstr "Твой пароль успешно сброшен"
 
-#: app/main/forms.py:11
+#: app/main/forms.py:9 app/main/routes.py:77
+#, fuzzy
+msgid "Search"
+msgstr "Пользователь"
+
+#: app/main/forms.py:20
 msgid "About me"
 msgstr "Обо мне"
 
-#: app/main/forms.py:13 app/main/forms.py:32
+#: app/main/forms.py:22 app/main/forms.py:41
 msgid "Submit"
 msgstr "Опубликовать"
 
-#: app/main/forms.py:31
+#: app/main/forms.py:40
 #, fuzzy
 msgid "Say something"
 msgstr "Скажи что-то"
 
-#: app/main/routes.py:35
+#: app/main/routes.py:36
 #, fuzzy
 msgid "Your post is now live!"
 msgstr "Твой пост опубликован!"
 
-#: app/main/routes.py:44 app/templates/base.html:21
+#: app/main/routes.py:45 app/templates/base.html:26
 msgid "Home"
 msgstr "Домашняя"
 
-#: app/main/routes.py:59 app/templates/base.html:22
+#: app/main/routes.py:60 app/templates/base.html:27
 msgid "Explore"
 msgstr "Исследовать"
 
-#: app/main/routes.py:88
+#: app/main/routes.py:106
 msgid "Your changes have been saved."
 msgstr "Твои изменения были сохранены."
 
-#: app/main/routes.py:93 app/templates/edit_profile.html:5
+#: app/main/routes.py:111 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Редактировать профиль"
 
-#: app/main/routes.py:104 app/main/routes.py:124
+#: app/main/routes.py:122 app/main/routes.py:142
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Пользователь %(username) не найден"
 
-#: app/main/routes.py:107
+#: app/main/routes.py:125
 #, fuzzy
 msgid "You cannot follow yourself!"
 msgstr "Ты не можете подписаться на себя!"
 
-#: app/main/routes.py:111
+#: app/main/routes.py:129
 #, fuzzy, python-format
 msgid "You are following %(username)s!"
 msgstr "Ты подписался на %(username)!"
 
-#: app/main/routes.py:127
+#: app/main/routes.py:145
 msgid "You cannot unfollow yourself!"
 msgstr "Ты не можете отписаться от себя!"
 
-#: app/main/routes.py:131
+#: app/main/routes.py:149
 #, fuzzy, python-format
 msgid "You are not following %(username)s."
 msgstr "Ты не подписан на %(username)!"
@@ -165,27 +170,27 @@ msgstr "%(username)s сказал(а) %(when)s"
 
 #: app/templates/_post.html:25
 msgid "Translate"
-msgstr ""
+msgstr "Перевести"
 
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
 msgstr "Добро пожаловать в Microblog"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:40
 msgid "Login"
 msgstr "Войти"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:42
 msgid "Profile"
 msgstr "Профиль"
 
-#: app/templates/base.html:29
+#: app/templates/base.html:43
 msgid "Logout"
 msgstr "Выйти"
 
-#: app/templates/base.html:66
+#: app/templates/base.html:80
 msgid "Error: Could not contact server."
-msgstr ""
+msgstr "Ошибка: не удалось связаться с сервером."
 
 #: app/templates/index.html:5
 #, python-format
@@ -199,6 +204,18 @@ msgstr "Новые посты"
 #: app/templates/index.html:22 app/templates/user.html:46
 msgid "Older posts"
 msgstr "Старые посты"
+
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr "Предыдущие результаты"
+
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr "Следующие результаты"
 
 #: app/templates/user.html:8
 msgid "User"
