@@ -15,6 +15,7 @@ python-dotenv
 elasticsearch
 
 #heroku
+
 gunicorn
 psycopg2
 
